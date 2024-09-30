@@ -9,8 +9,10 @@ f2 = open("C:\\Users\\A9884\\Downloads\\sp.txt","w")
 
 st1 = 'SCHADEN.GF#='
 st2 = 'N='
+st3 = 'NO TOLERANCE FOUND'
 
 cnt = 0
+cnt1 = 0
 
 lines = f.readlines()
 
@@ -29,7 +31,13 @@ for line in lines:
        i = line.index(st2) + 2
        f2.write(line[i:i+2] + "\n")
 
+#get error count
+for line in lines:
+    if st3 in line:
+        cnt1 += 1
+
 print(cnt)
+print(cnt1)
 f1.close()
 f2.close()
 f.close()
