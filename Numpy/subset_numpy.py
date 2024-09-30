@@ -1,5 +1,5 @@
 import pandas as pd
-baseball = pd.read_csv("C:\\Users\\A9884\\Python\\Ext_Files\\baseball.csv")[['Height', 'Weight']].to_numpy().tolist()
+baseball = pd.read_csv("Read baseball csv")[['Height', 'Weight']].to_numpy().tolist()
 
 import numpy as np
 
