@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+
 baseball = pd.read_csv("read_CSV")[['Height', 'Weight']].to_numpy().tolist()
 updated = np.array(pd.read_csv("Read CSV update",header = None))
 n = len(baseball)
